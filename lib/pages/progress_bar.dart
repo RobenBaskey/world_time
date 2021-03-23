@@ -8,6 +8,13 @@ class ProgressBar extends StatefulWidget {
 class _ProgressBarState extends State<ProgressBar> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SafeArea(
+        child: Scaffold(
+          appBar: AppBar(title: Text("Set Location"),),
+        ),
+      ),
+    );
   }
 }
